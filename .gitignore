@@ -1,0 +1,35 @@
+# Organizer-only material
+.organizer/
+
+# VS Code workspace settings
+/.vscode/
+
+# CMake build directories
+build/
+cmake-build-*/
+
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Compiled output
+*.exe
+*.out
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.pdb
+
+# Temporary/editor files
+*.tmp
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
