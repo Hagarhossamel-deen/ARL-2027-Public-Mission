@@ -20,4 +20,4 @@ Failure to comply with these requirements WILL severely affect your evaluation.
 Before reaching out, make sure your question cannot be answered by re-reading the instructions.
 Enquiries are welcome for real ambiguities or technical blockers, NOT as a substitute for effort.
 Include what you've already tried and exactly where you're stuck.
-Send at karimkhaled2k4@gmail.com, just make sure the Subject Line starts with `MISSION:`
+Send at karimkhaled2k4@gmail.com, just make sure the Subject Line starts with `SOLOMISSION:`
