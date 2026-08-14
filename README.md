@@ -16,6 +16,9 @@ Each mission's readme contains some guideline/restrictions for AI Usage.
 Generally, ALL use of AI must be clearly disclosed and documented.
 Failure to comply with these requirements WILL severely affect your evaluation.
 
+## Submission
+You will clone the repo, and add each deliverable as mentioned in each task. Final submission in the form should be a zip file of the complete solved mission with all the added deliverables.
+
 ## Enquiries
 Before reaching out, make sure your question cannot be answered by re-reading the instructions.
 Enquiries are welcome for real ambiguities or technical blockers, NOT as a substitute for effort.
