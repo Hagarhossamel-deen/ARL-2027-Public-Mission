@@ -1,0 +1,23 @@
+# ARL-2027 Solo Mission
+Welcome to the Solo Mission. 
+
+## Contents
+- Coding Assignment
+- Debugging Assignment
+- Theory Questions:
+    1. Perception
+    2. State Estimation
+    3. Motion Planning
+    4. Control
+- Literature Reading
+
+## AI Usage
+Each mission's readme contains some guideline/restrictions for AI Usage. 
+Generally, ALL use of AI must be clearly disclosed and documented.
+Failure to comply with these requirements WILL severely affect your evaluation.
+
+## Enquiries
+Before reaching out, make sure your question cannot be answered by re-reading the instructions.
+Enquiries are welcome for real ambiguities or technical blockers, NOT as a substitute for effort.
+Include what you've already tried and exactly where you're stuck.
+Send at karimkhaled2k4@gmail.com, just make sure the Subject Line starts with `MISSION:`
