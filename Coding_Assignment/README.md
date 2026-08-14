@@ -2,6 +2,7 @@
 
 Welcome to the **ARL 2027 Workshop** solo coding mission!  
 Your task is to ensure the autonomous vehicle maintains a safe following distance from the vehicle ahead.
+Make sure to read the guideline on AI Usage at the end of the README.
 
 ---
 
@@ -60,3 +61,6 @@ monitor_following_distance(distances, speeds)
 ```bash
 python -m unittest test_following_distance.py
 ```
+
+## AI Usage Guidelines
+For this coding question, using AI to write the code will result in IMMEDIATE disqualification.
