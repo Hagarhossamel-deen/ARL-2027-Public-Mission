@@ -1,5 +1,5 @@
 # ARL-2027 Solo Mission
-Welcome to the Solo Mission. 
+Welcome to the Solo Mission :)
 
 ## Contents
 - Coding Assignment
