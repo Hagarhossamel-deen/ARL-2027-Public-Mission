@@ -4,7 +4,7 @@ An autonomous rover receives obstacle detections in its own local coordinate fra
 
 The supplied project does not currently build or behave according to this specification. Diagnose and correct it. You may change the existing source files and CMake configuration, but do not replace the program with hard-coded output.
 
-Internet searches, documentation, and AI tools are allowed. You must understand and be able to explain every submitted change during your interview.
+Internet and documentation are allowed. AI is not forbidden, but you will be evaluated very carefully & thoroughly. You must understand and be able to explain every submitted change during your interview.
 
 ## Data Model
 
@@ -21,29 +21,6 @@ A detection is valid when:
 - all numeric fields are finite;
 - confidence is between the configured minimum and 1.0, inclusive;
 - its Euclidean range is greater than 0 and no greater than the configured maximum range.
-
-## Required Calculations
-
-Convert degrees to radians before using the C++ trigonometric functions:
-
-```text
-radians = degrees * pi / 180
-```
-
-Convert a local detection `(forward, left)` into world coordinates:
-
-```text
-world_x = rover_x + cos(heading) * forward - sin(heading) * left
-world_y = rover_y + sin(heading) * forward + cos(heading) * left
-```
-
-Convert speed from kilometres per hour to metres per second and calculate stopping distance:
-
-```text
-speed_mps = speed_kph / 3.6
-stopping_distance = speed_mps * reaction_time
-                  + speed_mps * speed_mps / (2 * max_deceleration)
-```
 
 Emergency braking must engage when at least one valid obstacle:
 
