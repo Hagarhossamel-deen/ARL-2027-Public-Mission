@@ -2,7 +2,7 @@
 # perception lidar
 the candidate should at least understand the following:
 - the basic LiDAR perception pipeline
--  this one is very important,, understand how distortions can be caused in a single lidar point cloud frame due to vehicle movement if not accounted for
+- understand how distortions can be caused in a single lidar point cloud frame due to vehicle movement if not accounted for (VERY IMPORTANT)
 - how the cone colour can be estimated from light intensity in point cloud
 - why cluster reconstruction is necessary
 
@@ -22,15 +22,15 @@ the candidate should at least understand the following:
 - why the car needs to estimate its own motion/state/velocity
 - the purpose of sensor fusion/ sensor redundancy (specifically here separate to the perception one)
 - the basic idea of EKF
-- why sensor measurements cannot simply be trusted individually (the idea of wheel slip/ deviation/ drift)
+- why sensor measurements cannot simply be trusted individually 
 - outliers vs drift over time
 
 # SLAM & mapping
 the candidate should at least understand the following:
-- why SLAM is necessary when the track is initially unknown/ what SLAM is trying to solve in general (build a map of cones and localize)
+- why SLAM is necessary when the track is initially unknown/ what SLAM is trying to solve in general
 - the idea that this is a data association problem of trying to correspond observed to mapped
-- the basic idea behind FastSLAM 2.0 (particle filter approach)
-- idea of lap closure + what occurs after it (pure localization) 
+- the basic idea behind FastSLAM 2.0 
+- idea of lap closure + what occurs after it 
 
 # planning
 the candidate should at least understand the following:
@@ -45,7 +45,7 @@ the candidate should at least understand the following:
 
 # testing & simulation 
 the candidate should at least understand the following:
-- why simulation is used before testing on the real car (very important to us fsai in specific)
+- why simulation is used before testing on the real car 
 - the purpose of the automated testing system (ATS)
 - the importance of logging and analyzing large amounts of test data
 
