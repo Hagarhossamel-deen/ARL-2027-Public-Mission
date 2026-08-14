@@ -4,7 +4,7 @@ An autonomous rover receives obstacle detections in its own local coordinate fra
 
 The supplied project does not currently build or behave according to this specification. Diagnose and correct it. You may change the existing source files and CMake configuration, but do not replace the program with hard-coded output.
 
-Internet and documentation are allowed. AI is not forbidden, but you will be evaluated very carefully & thoroughly. You must understand and be able to explain every submitted change during your interview.
+Internet and documentation are allowed. Read AI Guidelines below.
 
 ## Data Model
 
@@ -79,3 +79,5 @@ Name the report `<your_name>_DebugChallenge_Report.pdf`. Include:
 
 A short successful build/run log or screenshot is optional but appreciated.
 
+## AI Usage
+AI is not forbidden, but you will be evaluated very carefully & thoroughly. You must understand and be able to explain every submitted change AND all the caveats around it during your interview.
