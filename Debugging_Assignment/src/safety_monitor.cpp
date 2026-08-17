@@ -72,23 +72,29 @@ double calculateStoppingDistance(double speedKph, const SafetyConfig& config) {
     return reactionDistance + brakingDistance;
 }
 
-bool shouldEmergencyBrake //  we must see what obstacles are the nearsest and we must calculate the stopping distance (reactionDistance + brakingDistance)
-// to be true we must have the range smaller than or equal stopping distance 
-(
+bool shouldEmergencyBrake(
     const std::vector<Obstacle>& obstacles,
     double speedKph,
     const SafetyConfig& config) {
 
-    const auto nearest = findNearestObstacle(obstacles);
-
-    if (!nearest.has_value()) {
-        return false;
-    }
-
     const double stoppingDistance =
         calculateStoppingDistance(speedKph, config);
 
-    return nearest->range <= stoppingDistance;
+    for (const auto& obstacle : obstacles) {
+        const bool isInFront = obstacle.forward >= 0.0;
+        const bool isInLane =
+            std::abs(obstacle.left) <= config.laneHalfWidth;
+        const bool isWithinStoppingDistance =
+            obstacle.forward <= stoppingDistance;
+
+        if (isInFront &&
+            isInLane &&
+            isWithinStoppingDistance) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 }  // namespace arl
