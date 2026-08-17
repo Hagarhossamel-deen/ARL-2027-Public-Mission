@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-
+#include <optional>
 namespace arl {
 
 struct RoverPose {
