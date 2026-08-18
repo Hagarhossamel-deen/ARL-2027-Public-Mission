@@ -18,7 +18,7 @@ std::vector<Obstacle> processDetections(
     const RoverPose& pose,
     const SafetyConfig& config) {
     std::vector<Obstacle> obstacles;
-    const double headingRadians = pose.headingDegrees *M_PI /180; //we must convert in from degrees to radians
+    const double headingRadians =  pose.headingDegrees * std::acos(-1.0) / 180.0; //we must convert in from degrees to radians
     const double cosine = std::cos(headingRadians);
     const double sine = std::sin(headingRadians);
 
