@@ -83,7 +83,7 @@ bool shouldEmergencyBrake(
     for (const auto& obstacle : obstacles) {
         const bool isInFront = obstacle.forward >= 0.0;
         const bool isInLane =
-            std::abs(obstacle.left) <= config.laneHalfWidth;
+            std::abs(obstacle.left) <= config.laneHalfWidthMeters;
         const bool isWithinStoppingDistance =
             obstacle.forward <= stoppingDistance;
 
